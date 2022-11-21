@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora HTML</h1>
+    <input type="text" maxlength="999999999999999" id="op1" placeholder="Operador 1"   class="form-control"
+              required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+    <input type="text" id="operacion" placeholder="+,-,*,/">
+    <input type="text" maxlength="999999999999999" id="op2" placeholder="Operador 1"   class="form-control"
+              required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+
+    <input type="submit" value="calcular" id="calcular">
+
+    <p id="resultado"></p>
+</body>
+</html>
